@@ -74,5 +74,6 @@ cargo fmt --check
 cargo test
 cargo run -p fauna-cli -- validate fixtures\seed-fauna.json
 cargo run -p fauna-cli -- validate fixtures\consumers\banish-nature-rite-gamepack.json
+cargo run -p fauna-cli -- validate fixtures\consumers\banish-panel-loop-gamepack.json
 git grep -n "FAUNA" -- README.md PRODUCT_PLAN.md context\waves\PHASES.md
 ```

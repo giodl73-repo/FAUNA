@@ -1,0 +1,95 @@
+{
+  "document_id": "fauna:consumer:banish-panel-loop-gamepack",
+  "species": [
+    {
+      "species_id": "species:river-seal",
+      "label": "River seal",
+      "role": "wild_herd",
+      "habitats": [{ "habitat_id": "habitat:winter-ice-bridge", "label": "Winter ice bridge", "season": "freeze-thaw" }],
+      "behaviors": [{ "behavior_id": "behavior:ice-migration", "kind": "migration", "description": "Migrating seals make the crossing noisy, risky, and time-bound." }],
+      "pressures": [{ "pressure_id": "pressure:tithe-crossing-window", "category": "route_risk", "downstream_effect": "Store movement competes with river-shrine legitimacy and ice safety." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "ice-bridge-tithe" }]
+    },
+    {
+      "species_id": "species:mill-crow",
+      "label": "Mill crow",
+      "role": "pest",
+      "habitats": [{ "habitat_id": "habitat:mill-field", "label": "Mill field", "season": "harvest" }],
+      "behaviors": [{ "behavior_id": "behavior:guard-pattern-learning", "kind": "pest_outbreak", "description": "Crows learn scare labor patterns and exploit exposed sheaves." }],
+      "pressures": [{ "pressure_id": "pressure:grain-appeal", "category": "crop_loss", "downstream_effect": "Crop loss becomes a mill-trust and appeal-timing problem." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "miller-crows-appeal" }]
+    },
+    {
+      "species_id": "species:orchard-fox",
+      "label": "Orchard fox",
+      "role": "predator",
+      "habitats": [{ "habitat_id": "habitat:abandoned-orchard-den", "label": "Abandoned orchard den", "season": "blight recovery" }],
+      "behaviors": [{ "behavior_id": "behavior:denning-in-blight", "kind": "predation", "description": "Fox dens in the abandoned orchard change poultry safety and renewal timing." }],
+      "pressures": [{ "pressure_id": "pressure:renewal-den-disturbance", "category": "fear", "downstream_effect": "Orchard renewal disturbs predators while food recovery remains urgent." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "bone-ash-orchard" }]
+    },
+    {
+      "species_id": "species:lambing-ewe",
+      "label": "Lambing ewe",
+      "role": "livestock",
+      "habitats": [{ "habitat_id": "habitat:thaw-mud-sheep-pen", "label": "Thaw-mud sheep pen", "season": "lambing week" }],
+      "behaviors": [{ "behavior_id": "behavior:lambing-stress", "kind": "breeding", "description": "Ewes and lambs require guarded timing while trade labor pulls handlers away." }],
+      "pressures": [{ "pressure_id": "pressure:salt-trade-lambing", "category": "food", "downstream_effect": "Salt preservation competes with herd survival and first-milk obligation." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "salt-road-lambing" }]
+    },
+    {
+      "species_id": "species:mine-scree-goat",
+      "label": "Mine scree goat",
+      "role": "livestock",
+      "habitats": [{ "habitat_id": "habitat:mine-scree-trail", "label": "Mine scree trail", "season": "pit reopening" }],
+      "behaviors": [{ "behavior_id": "behavior:scree-path-finding", "kind": "grazing", "description": "Goats reveal unstable paths but damage warning growth near the mine." }],
+      "pressures": [{ "pressure_id": "pressure:bell-oath-access", "category": "route_risk", "downstream_effect": "Safe access, fuel, ore, and warning signs collide under the bell oath." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "bell-mine-lichen" }]
+    },
+    {
+      "species_id": "species:weir-otter",
+      "label": "Weir otter",
+      "role": "predator",
+      "habitats": [{ "habitat_id": "habitat:fish-weir-channel", "label": "Fish weir channel", "season": "feast week" }],
+      "behaviors": [{ "behavior_id": "behavior:concentrated-fish-raid", "kind": "predation", "description": "Otters exploit concentrated fish at the weir and force redesign or guarding." }],
+      "pressures": [{ "pressure_id": "pressure:empty-net-feast", "category": "food", "downstream_effect": "Predation turns a feast obligation into a public ration-trust problem." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "feast-of-empty-nets" }]
+    },
+    {
+      "species_id": "species:widow-hill-hare",
+      "label": "Widow Hill hare",
+      "role": "wild_herd",
+      "habitats": [{ "habitat_id": "habitat:dry-grave-grass", "label": "Dry grave grass", "season": "fire season" }],
+      "behaviors": [{ "behavior_id": "behavior:grass-nesting", "kind": "nesting", "description": "Hare nesting reveals disturbance before firebreak cutting." }],
+      "pressures": [{ "pressure_id": "pressure:firebreak-habitat", "category": "fear", "downstream_effect": "Emergency mitigation displaces habitat while grave-grass obligations constrain cuts." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "widow-hill-firebreak" }]
+    },
+    {
+      "species_id": "species:commons-fever-herd",
+      "label": "Commons fever herd",
+      "role": "livestock",
+      "habitats": [{ "habitat_id": "habitat:turnip-commons-market", "label": "Turnip commons market", "season": "saint day" }],
+      "behaviors": [{ "behavior_id": "behavior:market-contact-fever", "kind": "disease_transmission", "description": "Livestock fever spreads through herd contact at market and commons gates." }],
+      "pressures": [{ "pressure_id": "pressure:quarantine-gate", "category": "disease", "downstream_effect": "Animal health links quarantine, fodder harvest, market trade, and pilgrimage legitimacy." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "turnip-saint-quarantine" }]
+    },
+    {
+      "species_id": "species:coppice-bee",
+      "label": "Coppice bee",
+      "role": "pollinator",
+      "habitats": [{ "habitat_id": "habitat:flowering-coppice", "label": "Flowering coppice", "season": "charcoal cutting" }],
+      "behaviors": [{ "behavior_id": "behavior:smoke-forage-stress", "kind": "breeding", "description": "Hive stress and forage windows make cutting and smoke timing unsafe." }],
+      "pressures": [{ "pressure_id": "pressure:fuel-honey-bargain", "category": "food", "downstream_effect": "Winter heat and honey for civic peace depend on the same grove." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "charcoal-bee-bargain" }]
+    },
+    {
+      "species_id": "species:record-house-beaver",
+      "label": "Record house beaver",
+      "role": "wild_herd",
+      "habitats": [{ "habitat_id": "habitat:flood-channel-dam", "label": "Flood channel dam", "season": "flood" }],
+      "behaviors": [{ "behavior_id": "behavior:channel-damming", "kind": "domestication", "description": "Dam building changes flood height and emergency route timing." }],
+      "pressures": [{ "pressure_id": "pressure:ledger-flood-route", "category": "route_risk", "downstream_effect": "Animal channel changes force record salvage decisions under witness rules." }],
+      "evidence_refs": [{ "source_id": "banish-panel-loop-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\panel-loop-gamepack.json", "anchor": "flooded-ink-house" }]
+    }
+  ]
+}
