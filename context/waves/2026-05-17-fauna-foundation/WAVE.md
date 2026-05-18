@@ -27,4 +27,4 @@ fixture, repo-local skills, and TRACKER dependency placement.
 | 2 | Species and habitat schema | Add fixtures that prove evidence-backed presence and habitat constraints. |
 | 3 | Behavior and pressure schema | Add fixtures that prove migration, pest, predator, livestock, and disease-vector pressures. |
 | 4 | Consumer probes | Validate BANISH, PORTO, CERES, LUCIA, and CANON fixture slices. |
-| 5 | Publisher contract | Document generated CROP, PEBBLE, FLETCH, and PROOF artifact boundaries. |
+| 5 | Publisher contract | First FLETCH local registry seed; CROP, PEBBLE, and PROOF boundaries remain planned. Validate with `fletch registry validate --file .fletch\registries\fauna-foundation-assets.json`. |

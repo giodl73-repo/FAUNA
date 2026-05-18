@@ -1,0 +1,35 @@
+{
+  "schema_version": "fletch.registry.v1",
+  "generated_by": "FAUNA foundation assets",
+  "registry_id": "fauna-foundation-assets",
+  "fletches": [
+    {
+      "id": "fauna.foundation.seed-fauna",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "fixtures/seed-fauna.json"}],
+      "metadata": {"owner_repo": "FAUNA", "asset_kind": "seed-fixture", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["fauna", "species", "habitat", "fixture", "seed"]
+    },
+    {
+      "id": "fauna.consumer.banish-nature-rite-gamepack",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "fixtures/consumers/banish-nature-rite-gamepack.json"}],
+      "metadata": {"owner_repo": "FAUNA", "asset_kind": "consumer-probe", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["fauna", "banish", "consumer-probe", "animals", "nature-rite"]
+    },
+    {
+      "id": "fauna.foundation.quality-rubric",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "QUALITY_RUBRIC.md"}],
+      "metadata": {"owner_repo": "FAUNA", "asset_kind": "quality-rubric", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["fauna", "rubric", "evidence", "habitat", "quality"]
+    },
+    {
+      "id": "fauna.foundation.capability-expansion",
+      "node_kind": "document",
+      "shafts": [{"kind": "file", "url": "docs/capability-expansion.md"}],
+      "metadata": {"owner_repo": "FAUNA", "asset_kind": "capability-map", "fetch_policy": "local_file", "custody_status": "repo_owned"},
+      "tags": ["fauna", "capabilities", "animal-life", "expansion", "planning"]
+    }
+  ]
+}
