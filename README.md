@@ -43,6 +43,8 @@ life as an active system.
 [`docs\agent-expansion-experiment.md`](docs\agent-expansion-experiment.md)
 defines the agent-driven experiment for expanding FAUNA through 50-100 candidate
 animal-life capability systems while improving the rubric after each batch.
+The first expansion run is recorded in
+[`docs\capability-expansion.md`](docs\capability-expansion.md).
 
 ## Non-goals
 
