@@ -1,0 +1,95 @@
+{
+  "document_id": "fauna:consumer:banish-nature-rite-gamepack",
+  "species": [
+    {
+      "species_id": "species:wolf-pack",
+      "label": "Wolf pack",
+      "role": "predator",
+      "habitats": [{ "habitat_id": "habitat:orchard-edge", "label": "Orchard edge", "season": "autumn" }],
+      "behaviors": [{ "behavior_id": "behavior:dusk-predation", "kind": "predation", "description": "Packs test livestock paths and mourning routes at dusk." }],
+      "pressures": [{ "pressure_id": "pressure:wake-route-fear", "category": "fear", "downstream_effect": "Funeral attendance and fruit harvest require escorts or delayed travel." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "wolf-orchard-wake" }]
+    },
+    {
+      "species_id": "species:ridge-goat",
+      "label": "Ridge goat",
+      "role": "livestock",
+      "habitats": [{ "habitat_id": "habitat:sacred-ridge", "label": "Sacred ridge", "season": "drought" }],
+      "behaviors": [{ "behavior_id": "behavior:brush-overgraze", "kind": "grazing", "description": "Crowded goats strip brush faster than ridge scrub can recover." }],
+      "pressures": [{ "pressure_id": "pressure:milk-vs-regrowth", "category": "food", "downstream_effect": "Milk security creates vegetation debt and oath restitution pressure." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "goats-of-the-sacred-ridge" }]
+    },
+    {
+      "species_id": "species:granary-rat",
+      "label": "Granary rat",
+      "role": "pest",
+      "habitats": [{ "habitat_id": "habitat:sealed-granary", "label": "Sealed granary", "season": "late-autumn" }],
+      "behaviors": [{ "behavior_id": "behavior:grain-nesting", "kind": "pest_outbreak", "description": "Warm sealed stores hide nesting and grain loss until inspection." }],
+      "pressures": [{ "pressure_id": "pressure:famine-store-loss", "category": "crop_loss", "downstream_effect": "Delayed inspection protects taboo but risks winter food collapse." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "rat-year-granary-rite" }]
+    },
+    {
+      "species_id": "species:orchard-bee",
+      "label": "Orchard bee",
+      "role": "pollinator",
+      "habitats": [{ "habitat_id": "habitat:late-flower-strip", "label": "Late flower strip", "season": "last-warm-week" }],
+      "behaviors": [{ "behavior_id": "behavior:frost-swarm-risk", "kind": "breeding", "description": "Hive survival depends on warm-week handling and late forage." }],
+      "pressures": [{ "pressure_id": "pressure:pollination-window", "category": "food", "downstream_effect": "Pollinator care competes with procession labor before frost." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "bees-before-the-frost" }]
+    },
+    {
+      "species_id": "species:field-boar",
+      "label": "Field boar",
+      "role": "wild_herd",
+      "habitats": [{ "habitat_id": "habitat:blackthorn-hedge", "label": "Blackthorn hedge", "season": "storm-season" }],
+      "behaviors": [{ "behavior_id": "behavior:rooting-crop-edge", "kind": "grazing", "description": "Boar root at crop edges and follow weak hedge gaps." }],
+      "pressures": [{ "pressure_id": "pressure:hedge-protection", "category": "crop_loss", "downstream_effect": "Hedge cutting improves rescue access but increases crop damage." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "blackthorn-boundary" }]
+    },
+    {
+      "species_id": "species:marsh-mosquito",
+      "label": "Marsh mosquito",
+      "role": "disease_vector",
+      "habitats": [{ "habitat_id": "habitat:reedbed-standing-water", "label": "Reedbed standing water", "season": "warm-wet" }],
+      "behaviors": [{ "behavior_id": "behavior:fever-vector", "kind": "disease_transmission", "description": "Exposure rises along wet boundary routes at procession time." }],
+      "pressures": [{ "pressure_id": "pressure:procession-fever", "category": "disease", "downstream_effect": "Walking the boundary preserves legitimacy but spreads fever risk." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "fever-marsh-procession" }]
+    },
+    {
+      "species_id": "species:wool-moth",
+      "label": "Wool moth",
+      "role": "pest",
+      "habitats": [{ "habitat_id": "habitat:wool-store", "label": "Wool store", "season": "winter-fast" }],
+      "behaviors": [{ "behavior_id": "behavior:cloth-larvae", "kind": "pest_outbreak", "description": "Larvae spread through stored wool when cleaning and aromatic plants are delayed." }],
+      "pressures": [{ "pressure_id": "pressure:blanket-loss", "category": "material", "downstream_effect": "Blanket loss turns ritual cloth protection into a cold-weather crisis." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "moth-year-cloth-fast" }]
+    },
+    {
+      "species_id": "species:pilgrim-road-elk",
+      "label": "Pilgrim-road elk",
+      "role": "wild_herd",
+      "habitats": [{ "habitat_id": "habitat:browse-road-corridor", "label": "Browse road corridor", "season": "migration" }],
+      "behaviors": [{ "behavior_id": "behavior:road-crossing-migration", "kind": "migration", "description": "The herd crosses the pilgrimage road during a fixed marker week." }],
+      "pressures": [{ "pressure_id": "pressure:meat-vs-passage", "category": "route_risk", "downstream_effect": "Hunting, waiting, or forcing passage changes food, safety, and sacred timing." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "elk-road-pilgrimage" }]
+    },
+    {
+      "species_id": "species:ash-grove-nesting-bird",
+      "label": "Ash grove nesting bird",
+      "role": "scavenger",
+      "habitats": [{ "habitat_id": "habitat:ash-grove", "label": "Ash grove", "season": "dry-understory" }],
+      "behaviors": [{ "behavior_id": "behavior:nesting-displacement", "kind": "nesting", "description": "Nesting disruption signals grove health loss and evacuation timing." }],
+      "pressures": [{ "pressure_id": "pressure:firebreak-warning", "category": "fear", "downstream_effect": "Bird displacement makes firebreak delay visible before fire arrives." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "ash-grove-fire-vow" }]
+    },
+    {
+      "species_id": "species:river-salmon",
+      "label": "River salmon",
+      "role": "wild_herd",
+      "habitats": [{ "habitat_id": "habitat:weir-river", "label": "Weir river", "season": "salmon-run" }],
+      "behaviors": [{ "behavior_id": "behavior:run-timing", "kind": "migration", "description": "The run creates short-lived abundance that fails if weirs are late or excessive." }],
+      "pressures": [{ "pressure_id": "pressure:river-labor-window", "category": "food", "downstream_effect": "Fishing labor competes with funeral attendance during one weather window." }],
+      "evidence_refs": [{ "source_id": "banish-nature-rite-gamepack", "path": "..\\..\\..\\games-design\\banish\\data\\nature-rite-gamepack.json", "anchor": "salmon-bell-funeral" }]
+    }
+  ]
+}

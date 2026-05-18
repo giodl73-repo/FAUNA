@@ -38,6 +38,12 @@ life as an active system.
 5. Defer simulation/runtime extraction until at least two consumers prove the
    same product-neutral animal-system primitives.
 
+## Agent expansion
+
+[`docs\agent-expansion-experiment.md`](docs\agent-expansion-experiment.md)
+defines the agent-driven experiment for expanding FAUNA through 50-100 candidate
+animal-life capability systems while improving the rubric after each batch.
+
 ## Non-goals
 
 - FAUNA does not replace CERES economics or PORTO geography.
@@ -57,9 +63,14 @@ life as an active system.
 
 ## First validation
 
+FAUNA uses [`QUALITY_RUBRIC.md`](QUALITY_RUBRIC.md) to score living pressure,
+habitat grounding, behavior specificity, downstream boundaries, and evidence
+readiness before an artifact is promoted beyond a draft seed.
+
 ```powershell
 cargo fmt --check
 cargo test
 cargo run -p fauna-cli -- validate fixtures\seed-fauna.json
+cargo run -p fauna-cli -- validate fixtures\consumers\banish-nature-rite-gamepack.json
 git grep -n "FAUNA" -- README.md PRODUCT_PLAN.md context\waves\PHASES.md
 ```
