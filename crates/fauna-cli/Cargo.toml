@@ -1,0 +1,9 @@
+[package]
+name = "fauna-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+fauna-core = { path = "../fauna-core" }
+serde_json.workspace = true

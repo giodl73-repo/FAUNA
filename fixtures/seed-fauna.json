@@ -1,0 +1,71 @@
+{
+  "document_id": "fauna:seed",
+  "species": [
+    {
+      "species_id": "species:riverford-goat",
+      "label": "Riverford goat",
+      "role": "livestock",
+      "habitats": [
+        {
+          "habitat_id": "habitat:hill-pasture",
+          "label": "Hill pasture",
+          "season": "spring-through-autumn"
+        }
+      ],
+      "behaviors": [
+        {
+          "behavior_id": "behavior:brush-grazing",
+          "kind": "grazing",
+          "description": "Goats convert brush and marginal hill pasture into milk, meat, hides, and manure."
+        }
+      ],
+      "pressures": [
+        {
+          "pressure_id": "pressure:winter-fodder",
+          "category": "food",
+          "downstream_effect": "Winter survival depends on fodder planning and protected shelter near settlement edges."
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "seed",
+          "path": "fixtures\\seed-fauna.json",
+          "anchor": "species:riverford-goat"
+        }
+      ]
+    },
+    {
+      "species_id": "species:lowland-rat",
+      "label": "Lowland rat",
+      "role": "pest",
+      "habitats": [
+        {
+          "habitat_id": "habitat:granary-edge",
+          "label": "Granary edge",
+          "season": "late-autumn"
+        }
+      ],
+      "behaviors": [
+        {
+          "behavior_id": "behavior:granary-surge",
+          "kind": "pest_outbreak",
+          "description": "Rat pressure rises around warm, poorly sealed grain stores after harvest."
+        }
+      ],
+      "pressures": [
+        {
+          "pressure_id": "pressure:grain-loss",
+          "category": "crop_loss",
+          "downstream_effect": "Storage design, cats, traps, and sanitation change the winter grain floor."
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "seed",
+          "path": "fixtures\\seed-fauna.json",
+          "anchor": "species:lowland-rat"
+        }
+      ]
+    }
+  ]
+}
