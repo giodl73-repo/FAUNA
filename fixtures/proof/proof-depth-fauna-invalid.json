@@ -1,0 +1,39 @@
+{
+  "document_id": "fauna:proof-depth-invalid",
+  "species": [
+    {
+      "species_id": "species:proof-wolf",
+      "label": "Proof wolf",
+      "role": "predator",
+      "habitats": [
+        { "habitat_id": "habitat:ridge-edge", "label": "Ridge edge", "season": "winter" }
+      ],
+      "behaviors": [
+        { "behavior_id": "behavior:proof-predation", "kind": "predation", "description": "Winter packs test exposed travel at dusk." }
+      ],
+      "pressures": [
+        { "pressure_id": "pressure:proof-route-risk", "category": "route_risk", "downstream_effect": "Travel timing shifts around pack pressure." }
+      ],
+      "evidence_refs": [
+        { "source_id": "proof-depth", "path": "fixtures\\proof\\proof-depth-fauna-invalid.json", "anchor": "species:proof-wolf" }
+      ]
+    },
+    {
+      "species_id": "species:proof-wolf",
+      "label": "Duplicate proof wolf",
+      "role": "predator",
+      "habitats": [
+        { "habitat_id": "habitat:ridge-edge", "label": "Ridge edge", "season": "winter" }
+      ],
+      "behaviors": [
+        { "behavior_id": "behavior:proof-predation-2", "kind": "predation", "description": "Duplicate species id forces a structured validator failure." }
+      ],
+      "pressures": [
+        { "pressure_id": "pressure:proof-route-risk-2", "category": "route_risk", "downstream_effect": "Duplicate identity should fail validation." }
+      ],
+      "evidence_refs": [
+        { "source_id": "proof-depth", "path": "fixtures\\proof\\proof-depth-fauna-invalid.json", "anchor": "species:proof-wolf-2" }
+      ]
+    }
+  ]
+}

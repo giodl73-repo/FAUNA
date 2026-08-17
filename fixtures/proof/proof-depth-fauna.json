@@ -1,0 +1,22 @@
+{
+  "document_id": "fauna:proof-depth",
+  "species": [
+    {
+      "species_id": "species:proof-wolf",
+      "label": "Proof wolf",
+      "role": "predator",
+      "habitats": [
+        { "habitat_id": "habitat:ridge-edge", "label": "Ridge edge", "season": "winter" }
+      ],
+      "behaviors": [
+        { "behavior_id": "behavior:proof-predation", "kind": "predation", "description": "Winter packs test exposed travel at dusk." }
+      ],
+      "pressures": [
+        { "pressure_id": "pressure:proof-route-risk", "category": "route_risk", "downstream_effect": "Travel timing shifts around pack pressure." }
+      ],
+      "evidence_refs": [
+        { "source_id": "proof-depth", "path": "fixtures\\proof\\proof-depth-fauna.json", "anchor": "species:proof-wolf" }
+      ]
+    }
+  ]
+}
