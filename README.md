@@ -77,3 +77,13 @@ cargo run -p fauna-cli -- validate fixtures\consumers\banish-nature-rite-gamepac
 cargo run -p fauna-cli -- validate fixtures\consumers\banish-panel-loop-gamepack.json
 git grep -n "FAUNA" -- README.md PRODUCT_PLAN.md context\waves\PHASES.md
 ```
+
+## License
+
+FAUNA uses separate licenses for software and content. Source code,
+executable scripts, tests, configuration, and ordinary software
+documentation are MIT-licensed (copyright Gio Della-Libera). Original
+non-software content is licensed CC BY-NC 4.0 (copyright Gio Della-Libera);
+commercial use of that content requires separate written permission.
+Third-party material remains under its own terms.
+See [LICENSE](./LICENSE) for the complete notice.
